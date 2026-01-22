@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.8.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="main-container">
+      
+
+      <div id="downloadContainer" class="download-container">
+        <div class="btn">
+          <button id="download-json">Export JSON</button>
+          <button id="download-html">Export HTML</button>
+          <button id="cancel">Cancel</button>
+        </div>
+      </div>
+      <!-- LEFT-SIDE BOX -->
+      <div class="left-box">
+        <div class="figma-logo">
+          <img src="assests/figma logo.webp" alt />
+        </div>
+        <div class="figma-text">
+          <h2>Free</h2>
+          <p>Create Your Best Design</p>
+        </div>
+
+        <!-- FOR ADDING A LINE -->
+        <div class="line"></div>
+
+        <div class="file-assests">
+          <div class="files">
+            <div class="file">
+              <h3>File</h3>
+            </div>
+          </div>
+          <div class="search">
+            <i class="ri-search-line"></i>
+          </div>
+        </div>
+        <!-- FOR ADDING A LINE -->
+        <div class="line"></div>
+
+        <!-- ALL PAGES HERE- -->
+
+        <!-- LAYERS -->
+        <div class="layers">
+          <h3>Layers</h3>
+        </div>
+
+        <!-- ALL LAYERS -->
+        <div id="layers" class="all-layers">
+          <div class="line"></div>
+        </div>
+      </div>
+
+      <!-- CENTER BOX -->
+      <div class="center-box">
+        <!-- here all the shapes and content -->
+        <div id="main" class="main-section"></div>
+
+        <div class="all-tools">
+          <!-- FRAMES -->
+          <div class="all-frames">
+            <i id="art" class="ri-artboard-2-line"></i>
+            <i id="frame-arrow" class="ri-arrow-down-s-line"></i>
+
+            <div id="frames" class="frames">
+              <h3 id="frame-art">
+                Frame <i id="art" class="ri-artboard-2-line"></i>
+              </h3>
+              <h3 id="frame-section">
+                Section <i id="section" class="ri-image-ai-line"></i>
+              </h3>
+            </div>
+          </div>
+
+          <!-- ALL SPHAPES -->
+          <div class="all-shapes">
+            <i id="rectangle" class="ri-rectangle-line"></i>
+            <i id="shapes-arrow" class="ri-arrow-down-s-line"></i>
+
+            <div id="shapes" class="shapes">
+              <h3 id="rectool">Rectangle <i class="ri-rectangle-line"></i></h3>
+              <h3 id="circle">
+                Circle <i id="circle" class="ri-circle-line"></i>
+              </h3>
+              <input type="file" id="upload" hidden />
+              <label for="upload">Images<i class="ri-image-ai-line"></i></label>
+            </div>
+          </div>
+
+          <!-- TEXT  -->
+          <div id="text" class="text">
+            <i id="box" class="ri-t-box-line"></i>
+          </div>
+
+          <!-- PENCIL DRAWING -->
+          <div class="pencil">
+            <i id="pencil-drawing" class="ri-pencil-line"></i>
+          </div>
+
+          <!-- COMMENT -->
+          <div id="comment" class="comment">
+            <i id="chat" class="ri-chat-3-line"></i>
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT BOX -->
+      <div class="right-box">
+        <div class="logo-content">
+          <!-- RIGHT BOX UPPER SECTION -->
+          <div class="logo">
+            <img src="assests/Screenshot 2026-01-22 160544.png" alt="" />
+            <i class="ri-play-reverse-large-line"></i>
+            <button id="share">Share</button>
+          </div>
+          <div class="design">
+            <h2>Design</h2>
+          </div>
+          <div class="line"></div>
+        </div>
+
+        <div class="shape-name">
+          <h2>Rectangle</h2>
+        </div>
+        <div class="line"></div>
+
+        <!-- FOR ROTATION -->
+        <div class="rotation">
+          <h2>Rotation</h2>
+          <div class="xrotation">
+            <h4>
+              180
+              <input
+                type="number"
+                class="rotate"
+                id="rotate"
+                min="0"
+                max="360"
+              />
+            </h4>
+            <h4 id="rotate-value" class="rotate-icon">0</h4>
+          </div>
+        </div>
+
+        <!-- FOR POSITION -->
+        <div class="position">
+          <h2>Position</h2>
+          <div class="both-position">
+            <div class="X-position">
+              <h4>X</h4>
+              <input id="x-value" class="x-value" type="number" value="0" />
+            </div>
+            <div class="Y-position">
+              <h4>Y</h4>
+              <input id="y-value" class="y-value" type="number" value="0" />
+            </div>
+          </div>
+        </div>
+
+        <div class="line"></div>
+
+        <!-- FOR  DIMENSIONS -->
+        <div class="position">
+          <h2>Dimensions</h2>
+          <div class="both-position">
+            <div class="X-position">
+              <h4>W</h4>
+              <input id="width" class="x-value" type="number" value="0" />
+            </div>
+            <div class="Y-position">
+              <h4>H</h4>
+              <input id="height" class="y-value" type="number" value="0" />
+            </div>
+          </div>
+        </div>
+
+        <div class="line"></div>
+
+        <!-- FOR OPACITY -->
+        <div class="position">
+          <h2>Opacity</h2>
+          <div class="both-position">
+            <div class="X-position">
+              <input
+                type="range"
+                class="x-value"
+                id="opacity"
+                min="0"
+                max="100"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="line"></div>
+
+        <!-- FILL COLORS  -->
+        <div class="colors">
+          <h2>Fill - Color</h2>
+          <input type="color" id="colorInput" />
+          <p>Changed the color </p>
+
+          <button id="save">Save</button>
+          <button id="clear">Clear</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>
+
+
