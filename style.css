@@ -1,5 +1,4 @@
 :root {
-
   /* spacing */
   --space-sm: 0.3rem;
   --space-md: 0.5rem;
@@ -68,12 +67,29 @@ html {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  position: relative;
+  overflow: hidden;
 
   .text-box {
-    position: relative;
+    /* position: relative; */
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+
+    #cancel {
+      margin-top: 1vw;
+      outline: none;
+      border: none;
+      padding-inline: 1.9vw;
+      padding-block: 0.9vw;
+      border-radius: 30px;
+      font-size: 1.4vw;
+      background: linear-gradient(to top, red, rgb(224, 164, 164));
+      cursor: pointer;
+      color: white;
+      font-weight: 800;
+    }
   }
 
   h1 {
@@ -83,15 +99,20 @@ html {
     background-position: center;
     -webkit-background-clip: text;
     color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+
+    span {
+      font-size: 10px;
+      color: black;
+      font-family: cursive;
+      margin-top: -40px;
+      margin-right: -20px;
+    }
   }
-  h2 {
-    position: absolute;
-    bottom: 100px;
-    right: -30px;
-    font-size: 0.8vw;
-    font-family: cursive;
-  }
-  button {
+
+  #create {
     outline: none;
     border: none;
     padding-inline: 1.9vw;
@@ -101,6 +122,7 @@ html {
     background: linear-gradient(to left, rgb(79, 79, 79), black);
     color: whitesmoke;
     cursor: pointer;
+    font-weight: 800;
   }
 
   button:hover {
@@ -217,10 +239,7 @@ html {
           font-size: var(--font-xl);
         }
       }
-
-    
     }
-
 
     .layers {
       margin-top: var(--margin-md);
@@ -373,7 +392,6 @@ html {
             border-radius: var(--radius-sm);
             color: white;
           }
-
 
           label:hover {
             background-color: rgb(33, 152, 185);

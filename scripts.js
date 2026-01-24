@@ -588,7 +588,7 @@ function FramerDesign() {
     });
 
     localStorage.setItem("boardData", JSON.stringify(data));
-    alert("Saved successfully! 🎉");
+    alert("Saved successfully");
   }
 
   saveBtn.addEventListener("click", saveAll);
@@ -598,7 +598,7 @@ function FramerDesign() {
     const data = JSON.parse(localStorage.getItem("boardData") || "[]");
     if (!data.length) return;
 
-    clearAll(false); // <-- IMPORTANT
+    clearAll(false);  
 
     data.forEach((item) => {
       let el;
@@ -778,3 +778,6 @@ ${el.value}
 }
 
 FramerDesign();
+
+
+
